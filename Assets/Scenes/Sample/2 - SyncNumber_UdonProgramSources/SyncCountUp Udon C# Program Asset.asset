@@ -79,563 +79,565 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 0
-      endSourceChar: 0
+      endSourceChar: 281
       line: 0
+      lineChar: 0
+      spanCodeSection: "#region License\r\n/*--------------------------------------------*/\r\n/*
+        \ A license of this script is MIT License.  */\r\n/*       Writed by \"hatuxes\"(@kohu_vr)
+        \       */\r\n/*                   2020                     */\r\n/*--------------------------------------------*/\r\n#endregion\r\n\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 281
+      endSourceChar: 281
+      line: 8
       lineChar: 0
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 0
-      endSourceChar: 0
-      line: 0
-      lineChar: 0
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 0
-      endSourceChar: 6
-      line: 0
+      startSourceChar: 281
+      endSourceChar: 287
+      line: 8
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 6
-      endSourceChar: 18
-      line: 0
+      startSourceChar: 287
+      endSourceChar: 299
+      line: 8
       lineChar: 6
       spanCodeSection: "UdonSharp;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 18
-      endSourceChar: 24
-      line: 1
+      startSourceChar: 299
+      endSourceChar: 305
+      line: 9
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 24
-      endSourceChar: 38
-      line: 1
+      startSourceChar: 305
+      endSourceChar: 319
+      line: 9
       lineChar: 6
       spanCodeSection: "UnityEngine;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 38
-      endSourceChar: 44
-      line: 2
+      startSourceChar: 319
+      endSourceChar: 325
+      line: 10
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 44
-      endSourceChar: 44
-      line: 2
+      startSourceChar: 325
+      endSourceChar: 325
+      line: 10
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 44
-      endSourceChar: 56
-      line: 2
+      startSourceChar: 325
+      endSourceChar: 337
+      line: 10
       lineChar: 6
       spanCodeSection: UnityEngine.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 56
-      endSourceChar: 61
-      line: 2
+      startSourceChar: 337
+      endSourceChar: 342
+      line: 10
       lineChar: 18
       spanCodeSection: "UI;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 61
-      endSourceChar: 67
-      line: 3
+      startSourceChar: 342
+      endSourceChar: 348
+      line: 11
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 67
-      endSourceChar: 67
-      line: 3
+      startSourceChar: 348
+      endSourceChar: 348
+      line: 11
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 67
-      endSourceChar: 71
-      line: 3
+      startSourceChar: 348
+      endSourceChar: 352
+      line: 11
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 71
-      endSourceChar: 81
-      line: 3
+      startSourceChar: 352
+      endSourceChar: 362
+      line: 11
       lineChar: 10
       spanCodeSection: "SDKBase;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 81
-      endSourceChar: 87
-      line: 4
+      startSourceChar: 362
+      endSourceChar: 368
+      line: 12
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 87
-      endSourceChar: 87
-      line: 4
+      startSourceChar: 368
+      endSourceChar: 368
+      line: 12
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 87
-      endSourceChar: 91
-      line: 4
+      startSourceChar: 368
+      endSourceChar: 372
+      line: 12
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 91
-      endSourceChar: 100
-      line: 4
+      startSourceChar: 372
+      endSourceChar: 381
+      line: 12
       lineChar: 10
       spanCodeSection: "Udon;\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 100
-      endSourceChar: 125
-      line: 6
+      startSourceChar: 381
+      endSourceChar: 406
+      line: 14
       lineChar: 0
       spanCodeSection: 'public class SyncCounter '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 125
-      endSourceChar: 127
-      line: 6
+      startSourceChar: 406
+      endSourceChar: 408
+      line: 14
       lineChar: 25
       spanCodeSection: ': '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 127
-      endSourceChar: 127
-      line: 6
+      startSourceChar: 408
+      endSourceChar: 408
+      line: 14
       lineChar: 27
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 127
-      endSourceChar: 154
-      line: 6
+      startSourceChar: 408
+      endSourceChar: 435
+      line: 14
       lineChar: 27
       spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 154
-      endSourceChar: 161
-      line: 8
+      startSourceChar: 435
+      endSourceChar: 442
+      line: 16
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 161
-      endSourceChar: 161
-      line: 8
+      startSourceChar: 442
+      endSourceChar: 442
+      line: 16
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 161
-      endSourceChar: 179
-      line: 8
+      startSourceChar: 442
+      endSourceChar: 460
+      line: 16
       lineChar: 11
       spanCodeSection: "Text text;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 179
-      endSourceChar: 180
-      line: 10
+      startSourceChar: 460
+      endSourceChar: 461
+      line: 18
       lineChar: 4
       spanCodeSection: '['
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 180
-      endSourceChar: 191
-      line: 10
+      startSourceChar: 461
+      endSourceChar: 472
+      line: 18
       lineChar: 5
       spanCodeSection: UdonSynced(
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 191
-      endSourceChar: 191
-      line: 10
+      startSourceChar: 472
+      endSourceChar: 472
+      line: 18
       lineChar: 16
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 191
-      endSourceChar: 204
-      line: 10
+      startSourceChar: 472
+      endSourceChar: 485
+      line: 18
       lineChar: 16
       spanCodeSection: UdonSyncMode.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 204
-      endSourceChar: 204
-      line: 10
+      startSourceChar: 485
+      endSourceChar: 485
+      line: 18
       lineChar: 29
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 204
-      endSourceChar: 216
-      line: 10
+      startSourceChar: 485
+      endSourceChar: 497
+      line: 18
       lineChar: 29
       spanCodeSection: "None)]\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 216
-      endSourceChar: 216
-      line: 11
+      startSourceChar: 497
+      endSourceChar: 497
+      line: 19
       lineChar: 4
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 216
-      endSourceChar: 233
-      line: 11
+      startSourceChar: 497
+      endSourceChar: 514
+      line: 19
       lineChar: 4
       spanCodeSection: "int _num;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 233
-      endSourceChar: 251
-      line: 13
+      startSourceChar: 514
+      endSourceChar: 532
+      line: 21
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 251
-      endSourceChar: 262
-      line: 14
+      startSourceChar: 532
+      endSourceChar: 543
+      line: 22
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 262
-      endSourceChar: 262
-      line: 15
+      startSourceChar: 543
+      endSourceChar: 543
+      line: 23
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 262
-      endSourceChar: 269
-      line: 15
+      startSourceChar: 543
+      endSourceChar: 550
+      line: 23
       lineChar: 8
       spanCodeSection: '_num = '
     - startInstruction: 20
       endInstruction: 47
-      startSourceChar: 269
-      endSourceChar: 286
-      line: 15
+      startSourceChar: 550
+      endSourceChar: 567
+      line: 23
       lineChar: 15
       spanCodeSection: "0;\r\n    }\r\n\r\n    "
     - startInstruction: 48
       endInstruction: 67
-      startSourceChar: 286
-      endSourceChar: 305
-      line: 18
+      startSourceChar: 567
+      endSourceChar: 586
+      line: 26
       lineChar: 4
       spanCodeSection: "void Update()\r\n    "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 305
-      endSourceChar: 316
-      line: 19
+      startSourceChar: 586
+      endSourceChar: 597
+      line: 27
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 316
-      endSourceChar: 316
-      line: 20
+      startSourceChar: 597
+      endSourceChar: 597
+      line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 316
-      endSourceChar: 328
-      line: 20
+      startSourceChar: 597
+      endSourceChar: 609
+      line: 28
       lineChar: 8
       spanCodeSection: 'text.text = '
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 328
-      endSourceChar: 328
-      line: 20
+      startSourceChar: 609
+      endSourceChar: 609
+      line: 28
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 328
-      endSourceChar: 328
-      line: 20
+      startSourceChar: 609
+      endSourceChar: 609
+      line: 28
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 328
-      endSourceChar: 333
-      line: 20
+      startSourceChar: 609
+      endSourceChar: 614
+      line: 28
       lineChar: 20
       spanCodeSection: _num.
     - startInstruction: 68
       endInstruction: 123
-      startSourceChar: 333
-      endSourceChar: 359
-      line: 20
+      startSourceChar: 614
+      endSourceChar: 640
+      line: 28
       lineChar: 25
       spanCodeSection: "ToString();\r\n    }\r\n\r\n    "
     - startInstruction: 124
       endInstruction: 143
-      startSourceChar: 359
-      endSourceChar: 396
-      line: 23
+      startSourceChar: 640
+      endSourceChar: 677
+      line: 31
       lineChar: 4
       spanCodeSection: "public override void Interact()\r\n    "
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 396
-      endSourceChar: 440
-      line: 24
+      startSourceChar: 677
+      endSourceChar: 721
+      line: 32
       lineChar: 4
       spanCodeSection: "{\r\n        //Cube\uFFFD\u0251\u0382\uFFFD\uFFFD\uFFFDI\uFFFD[\uFFFDi\uFFFD[\uFFFD\uFFFD\u03CDX\r\n
         \       "
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 440
-      endSourceChar: 444
-      line: 26
+      startSourceChar: 721
+      endSourceChar: 725
+      line: 34
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 444
-      endSourceChar: 484
-      line: 26
+      startSourceChar: 725
+      endSourceChar: 765
+      line: 34
       lineChar: 12
       spanCodeSection: 'Networking.GetOwner(this.gameObject) != '
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 484
-      endSourceChar: 484
-      line: 26
+      startSourceChar: 765
+      endSourceChar: 765
+      line: 34
       lineChar: 52
       spanCodeSection: 
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 484
-      endSourceChar: 495
-      line: 26
+      startSourceChar: 765
+      endSourceChar: 776
+      line: 34
       lineChar: 52
       spanCodeSection: Networking.
     - startInstruction: 144
       endInstruction: 231
-      startSourceChar: 495
-      endSourceChar: 508
-      line: 26
+      startSourceChar: 776
+      endSourceChar: 789
+      line: 34
       lineChar: 63
       spanCodeSection: 'LocalPlayer) '
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 508
-      endSourceChar: 508
-      line: 26
+      startSourceChar: 789
+      endSourceChar: 789
+      line: 34
       lineChar: 76
       spanCodeSection: 
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 508
-      endSourceChar: 528
-      line: 26
+      startSourceChar: 789
+      endSourceChar: 809
+      line: 34
       lineChar: 76
       spanCodeSection: Networking.SetOwner(
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 528
-      endSourceChar: 528
-      line: 26
+      startSourceChar: 809
+      endSourceChar: 809
+      line: 34
       lineChar: 96
       spanCodeSection: 
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 528
-      endSourceChar: 539
-      line: 26
+      startSourceChar: 809
+      endSourceChar: 820
+      line: 34
       lineChar: 96
       spanCodeSection: Networking.
     - startInstruction: 232
       endInstruction: 247
-      startSourceChar: 539
-      endSourceChar: 552
-      line: 26
+      startSourceChar: 820
+      endSourceChar: 833
+      line: 34
       lineChar: 107
       spanCodeSection: 'LocalPlayer, '
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 552
-      endSourceChar: 552
-      line: 26
+      startSourceChar: 833
+      endSourceChar: 833
+      line: 34
       lineChar: 120
       spanCodeSection: 
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 552
-      endSourceChar: 557
-      line: 26
+      startSourceChar: 833
+      endSourceChar: 838
+      line: 34
       lineChar: 120
       spanCodeSection: this.
     - startInstruction: 248
       endInstruction: 271
-      startSourceChar: 557
-      endSourceChar: 599
-      line: 26
+      startSourceChar: 838
+      endSourceChar: 880
+      line: 34
       lineChar: 125
       spanCodeSection: "gameObject);\r\n        //\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\r\n
         \       "
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 599
-      endSourceChar: 599
-      line: 28
+      startSourceChar: 880
+      endSourceChar: 880
+      line: 36
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 599
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 880
+      endSourceChar: 903
+      line: 36
       lineChar: 8
       spanCodeSection: SendCustomNetworkEvent(
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 36
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 36
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 36
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 36
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 622
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 903
+      line: 36
       lineChar: 31
       spanCodeSection: 
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 622
-      endSourceChar: 626
-      line: 28
+      startSourceChar: 903
+      endSourceChar: 907
+      line: 36
       lineChar: 31
       spanCodeSection: VRC.
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 626
-      endSourceChar: 631
-      line: 28
+      startSourceChar: 907
+      endSourceChar: 912
+      line: 36
       lineChar: 35
       spanCodeSection: Udon.
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 631
-      endSourceChar: 638
-      line: 28
+      startSourceChar: 912
+      endSourceChar: 919
+      line: 36
       lineChar: 40
       spanCodeSection: Common.
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 638
-      endSourceChar: 649
-      line: 28
+      startSourceChar: 919
+      endSourceChar: 930
+      line: 36
       lineChar: 47
       spanCodeSection: Interfaces.
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 649
-      endSourceChar: 668
-      line: 28
+      startSourceChar: 930
+      endSourceChar: 949
+      line: 36
       lineChar: 58
       spanCodeSection: NetworkEventTarget.
     - startInstruction: 272
       endInstruction: 271
-      startSourceChar: 668
-      endSourceChar: 673
-      line: 28
+      startSourceChar: 949
+      endSourceChar: 954
+      line: 36
       lineChar: 77
       spanCodeSection: 'All, '
     - startInstruction: 272
       endInstruction: 311
-      startSourceChar: 673
-      endSourceChar: 699
-      line: 28
+      startSourceChar: 954
+      endSourceChar: 980
+      line: 36
       lineChar: 82
       spanCodeSection: "\"CountUp\");\r\n    }\r\n\r\n    "
     - startInstruction: 312
       endInstruction: 331
-      startSourceChar: 699
-      endSourceChar: 726
-      line: 31
+      startSourceChar: 980
+      endSourceChar: 1007
+      line: 39
       lineChar: 4
       spanCodeSection: "public void CountUp()\r\n    "
     - startInstruction: 332
       endInstruction: 331
-      startSourceChar: 726
-      endSourceChar: 737
-      line: 32
+      startSourceChar: 1007
+      endSourceChar: 1018
+      line: 40
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 332
       endInstruction: 331
-      startSourceChar: 737
-      endSourceChar: 737
-      line: 33
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 41
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 332
       endInstruction: 331
-      startSourceChar: 737
-      endSourceChar: 737
-      line: 33
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 41
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 332
       endInstruction: 332
-      startSourceChar: 737
-      endSourceChar: 737
-      line: 33
+      startSourceChar: 1018
+      endSourceChar: 1018
+      line: 41
       lineChar: 8
       spanCodeSection: 
   serializationData:

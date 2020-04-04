@@ -1,3 +1,11 @@
+#region License
+/*--------------------------------------------*/
+/*  A license of this script is MIT License.  */
+/*       Writed by "hatuxes"(@kohu_vr)        */
+/*                   2020                     */
+/*--------------------------------------------*/
+#endregion
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
