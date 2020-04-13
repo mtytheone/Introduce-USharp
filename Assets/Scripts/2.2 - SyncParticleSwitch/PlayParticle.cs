@@ -17,12 +17,17 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class RotateCube : UdonSharpBehaviour
+public class PlayParticle : UdonSharpBehaviour
 {
-    public float RotateSpeed;
+    public ParticleSystem Particle;
 
-    void Update()
+    public override void Interact()
     {
-        this.gameObject.transform.Rotate(this.gameObject.transform.up * RotateSpeed * Time.deltaTime);
+        if (!Particle.isPlaying) SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "Emit");
+    }
+
+    public void Emit()
+    {
+        Particle.Play();
     }
 }

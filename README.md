@@ -11,4 +11,4 @@ VRCSDK3及びUdonSharpをインストールしてご使用ください。
 ## License - ライセンス
 このプロジェクト及びソースファイルは **MIT** ライセンスに乗っ取ります。
 
-- [ライセンスページ](https://choosealicense.com/licenses/mit/)
+- [ライセンス本文](https://github.com/mtytheone/Introduce-USharp/blob/master/LICENSE.md)

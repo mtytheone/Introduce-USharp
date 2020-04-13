@@ -56,314 +56,355 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 0
-      endSourceChar: 281
+      endSourceChar: 5179
       line: 0
       lineChar: 0
-      spanCodeSection: "#region License\r\n/*--------------------------------------------*/\r\n/*
-        \ A license of this script is MIT License.  */\r\n/*       Writed by \"hatuxes\"(@kohu_vr)
-        \       */\r\n/*                   2020                     */\r\n/*--------------------------------------------*/\r\n#endregion\r\n\r\n"
+      spanCodeSection: "#region License\r\n/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/\r\n/*
+        MIT License                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        Copyright (c) 2000 hatuxes                                                                                                                                                                                                                                                                                                                                                                                                                                                   */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the \"Software\"), to
+        deal in the Software without restriction, including without limitation the
+        rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+        sell copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:                             */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.                                                                                                                                                                                                                                                                                                                                               */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+        OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        */\r\n/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/\r\n#endregion\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 281
-      endSourceChar: 281
-      line: 8
+      startSourceChar: 5179
+      endSourceChar: 5179
+      line: 14
       lineChar: 0
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 281
-      endSourceChar: 287
-      line: 8
+      startSourceChar: 5179
+      endSourceChar: 5185
+      line: 14
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 287
-      endSourceChar: 299
-      line: 8
+      startSourceChar: 5185
+      endSourceChar: 5197
+      line: 14
       lineChar: 6
       spanCodeSection: "UdonSharp;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 299
-      endSourceChar: 305
-      line: 9
+      startSourceChar: 5197
+      endSourceChar: 5203
+      line: 15
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 305
-      endSourceChar: 319
-      line: 9
+      startSourceChar: 5203
+      endSourceChar: 5217
+      line: 15
       lineChar: 6
       spanCodeSection: "UnityEngine;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 319
-      endSourceChar: 325
-      line: 10
+      startSourceChar: 5217
+      endSourceChar: 5223
+      line: 16
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 325
-      line: 10
+      startSourceChar: 5223
+      endSourceChar: 5223
+      line: 16
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 329
-      line: 10
+      startSourceChar: 5223
+      endSourceChar: 5227
+      line: 16
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 329
-      endSourceChar: 339
-      line: 10
+      startSourceChar: 5227
+      endSourceChar: 5237
+      line: 16
       lineChar: 10
       spanCodeSection: "SDKBase;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 339
-      endSourceChar: 345
-      line: 11
+      startSourceChar: 5237
+      endSourceChar: 5243
+      line: 17
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 345
-      endSourceChar: 345
-      line: 11
+      startSourceChar: 5243
+      endSourceChar: 5243
+      line: 17
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 345
-      endSourceChar: 349
-      line: 11
+      startSourceChar: 5243
+      endSourceChar: 5247
+      line: 17
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 349
-      endSourceChar: 358
-      line: 11
+      startSourceChar: 5247
+      endSourceChar: 5256
+      line: 17
       lineChar: 10
       spanCodeSection: "Udon;\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 358
-      endSourceChar: 386
-      line: 13
+      startSourceChar: 5256
+      endSourceChar: 5284
+      line: 19
       lineChar: 0
       spanCodeSection: 'public class MaterialChange '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 386
-      endSourceChar: 388
-      line: 13
+      startSourceChar: 5284
+      endSourceChar: 5286
+      line: 19
       lineChar: 28
       spanCodeSection: ': '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 388
-      endSourceChar: 388
-      line: 13
+      startSourceChar: 5286
+      endSourceChar: 5286
+      line: 19
       lineChar: 30
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 388
-      endSourceChar: 415
-      line: 13
+      startSourceChar: 5286
+      endSourceChar: 5313
+      line: 19
       lineChar: 30
       spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 415
-      endSourceChar: 422
-      line: 15
+      startSourceChar: 5313
+      endSourceChar: 5320
+      line: 21
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 422
-      endSourceChar: 422
-      line: 15
+      startSourceChar: 5320
+      endSourceChar: 5320
+      line: 21
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 422
-      endSourceChar: 450
-      line: 15
+      startSourceChar: 5320
+      endSourceChar: 5348
+      line: 21
       lineChar: 11
       spanCodeSection: "MeshRenderer Ground;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 450
-      endSourceChar: 457
-      line: 17
+      startSourceChar: 5348
+      endSourceChar: 5355
+      line: 23
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 457
-      endSourceChar: 457
-      line: 17
+      startSourceChar: 5355
+      endSourceChar: 5355
+      line: 23
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 457
-      endSourceChar: 487
-      line: 17
+      startSourceChar: 5355
+      endSourceChar: 5385
+      line: 23
       lineChar: 11
       spanCodeSection: "Material BeforeMaterial;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 487
-      endSourceChar: 494
-      line: 18
+      startSourceChar: 5385
+      endSourceChar: 5392
+      line: 24
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 494
-      endSourceChar: 494
-      line: 18
+      startSourceChar: 5392
+      endSourceChar: 5392
+      line: 24
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 494
-      endSourceChar: 525
-      line: 18
+      startSourceChar: 5392
+      endSourceChar: 5423
+      line: 24
       lineChar: 11
       spanCodeSection: "Material AfterMaterial;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 525
-      endSourceChar: 543
-      line: 20
+      startSourceChar: 5423
+      endSourceChar: 5441
+      line: 26
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 543
-      endSourceChar: 554
-      line: 21
+      startSourceChar: 5441
+      endSourceChar: 5452
+      line: 27
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 554
-      endSourceChar: 554
-      line: 22
+      startSourceChar: 5452
+      endSourceChar: 5452
+      line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 554
-      endSourceChar: 578
-      line: 22
+      startSourceChar: 5452
+      endSourceChar: 5476
+      line: 28
       lineChar: 8
       spanCodeSection: 'Ground.sharedMaterial = '
     - startInstruction: 20
       endInstruction: 51
-      startSourceChar: 578
-      endSourceChar: 608
-      line: 22
+      startSourceChar: 5476
+      endSourceChar: 5506
+      line: 28
       lineChar: 32
       spanCodeSection: "BeforeMaterial;\r\n    }\r\n\r\n    "
     - startInstruction: 52
       endInstruction: 71
-      startSourceChar: 608
-      endSourceChar: 642
-      line: 25
+      startSourceChar: 5506
+      endSourceChar: 5540
+      line: 31
       lineChar: 4
       spanCodeSection: "public void ChangeMaterial()\r\n    "
     - startInstruction: 72
       endInstruction: 71
-      startSourceChar: 642
-      endSourceChar: 688
-      line: 26
+      startSourceChar: 5540
+      endSourceChar: 5586
+      line: 32
       lineChar: 4
       spanCodeSection: "{\r\n        //\uFFFD{\uFFFD^\uFFFD\uFFFD\uFFFD\u0242\uFFFD\uFFFD}\uFFFDe\uFFFD\uFFFD\uFFFDA\uFFFD\uFFFD\uFFFDX\uFFFDV\r\n
         \       "
     - startInstruction: 72
       endInstruction: 71
-      startSourceChar: 688
-      endSourceChar: 692
-      line: 28
+      startSourceChar: 5586
+      endSourceChar: 5590
+      line: 34
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 72
       endInstruction: 71
-      startSourceChar: 692
-      endSourceChar: 717
-      line: 28
+      startSourceChar: 5590
+      endSourceChar: 5590
+      line: 34
       lineChar: 12
-      spanCodeSection: 'Ground.sharedMaterial == '
+      spanCodeSection: 
     - startInstruction: 72
+      endInstruction: 71
+      startSourceChar: 5590
+      endSourceChar: 5590
+      line: 34
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 72
+      endInstruction: 71
+      startSourceChar: 5590
+      endSourceChar: 5597
+      line: 34
+      lineChar: 12
+      spanCodeSection: Ground.
+    - startInstruction: 72
+      endInstruction: 95
+      startSourceChar: 5597
+      endSourceChar: 5615
+      line: 34
+      lineChar: 19
+      spanCodeSection: 'sharedMaterial == '
+    - startInstruction: 96
       endInstruction: 143
-      startSourceChar: 717
-      endSourceChar: 733
-      line: 28
+      startSourceChar: 5615
+      endSourceChar: 5631
+      line: 34
       lineChar: 37
       spanCodeSection: 'BeforeMaterial) '
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 733
-      endSourceChar: 733
-      line: 28
+      startSourceChar: 5631
+      endSourceChar: 5631
+      line: 34
       lineChar: 53
       spanCodeSection: 
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 733
-      endSourceChar: 757
-      line: 28
+      startSourceChar: 5631
+      endSourceChar: 5655
+      line: 34
       lineChar: 53
       spanCodeSection: 'Ground.sharedMaterial = '
     - startInstruction: 144
       endInstruction: 175
-      startSourceChar: 757
-      endSourceChar: 781
-      line: 28
+      startSourceChar: 5655
+      endSourceChar: 5679
+      line: 34
       lineChar: 77
       spanCodeSection: "AfterMaterial;\r\n        "
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 781
-      endSourceChar: 786
-      line: 29
+      startSourceChar: 5679
+      endSourceChar: 5684
+      line: 35
       lineChar: 8
       spanCodeSection: 'else '
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 786
-      endSourceChar: 786
-      line: 29
+      startSourceChar: 5684
+      endSourceChar: 5684
+      line: 35
       lineChar: 13
       spanCodeSection: 
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 786
-      endSourceChar: 810
-      line: 29
+      startSourceChar: 5684
+      endSourceChar: 5708
+      line: 35
       lineChar: 13
       spanCodeSection: 'Ground.sharedMaterial = '
     - startInstruction: 176
       endInstruction: 176
-      startSourceChar: 810
-      endSourceChar: 810
-      line: 29
+      startSourceChar: 5708
+      endSourceChar: 5708
+      line: 35
       lineChar: 37
       spanCodeSection: 
+  hasInteractEvent: 0
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

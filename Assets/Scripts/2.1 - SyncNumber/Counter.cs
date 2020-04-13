@@ -14,15 +14,28 @@
 
 using UdonSharp;
 using UnityEngine;
+using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class RotateCube : UdonSharpBehaviour
+public class Counter : UdonSharpBehaviour
 {
-    public float RotateSpeed;
+    public Text text;
+
+    int _num;
+
+    void Start()
+    {
+        _num = 0;
+    }
 
     void Update()
     {
-        this.gameObject.transform.Rotate(this.gameObject.transform.up * RotateSpeed * Time.deltaTime);
+        text.text = _num.ToString();
+    }
+
+    public override void Interact()
+    {
+        _num++;
     }
 }

@@ -55,327 +55,347 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 0
-      endSourceChar: 281
+      endSourceChar: 5179
       line: 0
       lineChar: 0
-      spanCodeSection: "#region License\r\n/*--------------------------------------------*/\r\n/*
-        \ A license of this script is MIT License.  */\r\n/*       Writed by \"hatuxes\"(@kohu_vr)
-        \       */\r\n/*                   2020                     */\r\n/*--------------------------------------------*/\r\n#endregion\r\n\r\n"
+      spanCodeSection: "#region License\r\n/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/\r\n/*
+        MIT License                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        Copyright (c) 2000 hatuxes                                                                                                                                                                                                                                                                                                                                                                                                                                                   */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the \"Software\"), to
+        deal in the Software without restriction, including without limitation the
+        rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+        sell copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:                             */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.                                                                                                                                                                                                                                                                                                                                               */\r\n/*
+        \                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */\r\n/*
+        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+        OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        */\r\n/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/\r\n#endregion\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 281
-      endSourceChar: 281
-      line: 8
+      startSourceChar: 5179
+      endSourceChar: 5179
+      line: 14
       lineChar: 0
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 281
-      endSourceChar: 287
-      line: 8
+      startSourceChar: 5179
+      endSourceChar: 5185
+      line: 14
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 287
-      endSourceChar: 299
-      line: 8
+      startSourceChar: 5185
+      endSourceChar: 5197
+      line: 14
       lineChar: 6
       spanCodeSection: "UdonSharp;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 299
-      endSourceChar: 305
-      line: 9
+      startSourceChar: 5197
+      endSourceChar: 5203
+      line: 15
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 305
-      endSourceChar: 319
-      line: 9
+      startSourceChar: 5203
+      endSourceChar: 5217
+      line: 15
       lineChar: 6
       spanCodeSection: "UnityEngine;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 319
-      endSourceChar: 325
-      line: 10
+      startSourceChar: 5217
+      endSourceChar: 5223
+      line: 16
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 325
-      line: 10
+      startSourceChar: 5223
+      endSourceChar: 5223
+      line: 16
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 325
-      endSourceChar: 337
-      line: 10
+      startSourceChar: 5223
+      endSourceChar: 5235
+      line: 16
       lineChar: 6
       spanCodeSection: UnityEngine.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 337
-      endSourceChar: 342
-      line: 10
+      startSourceChar: 5235
+      endSourceChar: 5240
+      line: 16
       lineChar: 18
       spanCodeSection: "UI;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 342
-      endSourceChar: 348
-      line: 11
+      startSourceChar: 5240
+      endSourceChar: 5246
+      line: 17
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 348
-      endSourceChar: 348
-      line: 11
+      startSourceChar: 5246
+      endSourceChar: 5246
+      line: 17
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 348
-      endSourceChar: 352
-      line: 11
+      startSourceChar: 5246
+      endSourceChar: 5250
+      line: 17
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 352
-      endSourceChar: 362
-      line: 11
+      startSourceChar: 5250
+      endSourceChar: 5260
+      line: 17
       lineChar: 10
       spanCodeSection: "SDKBase;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 362
-      endSourceChar: 368
-      line: 12
+      startSourceChar: 5260
+      endSourceChar: 5266
+      line: 18
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 368
-      endSourceChar: 368
-      line: 12
+      startSourceChar: 5266
+      endSourceChar: 5266
+      line: 18
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 368
-      endSourceChar: 372
-      line: 12
+      startSourceChar: 5266
+      endSourceChar: 5270
+      line: 18
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 372
-      endSourceChar: 381
-      line: 12
+      startSourceChar: 5270
+      endSourceChar: 5279
+      line: 18
       lineChar: 10
       spanCodeSection: "Udon;\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 381
-      endSourceChar: 402
-      line: 14
+      startSourceChar: 5279
+      endSourceChar: 5300
+      line: 20
       lineChar: 0
       spanCodeSection: 'public class Counter '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 402
-      endSourceChar: 404
-      line: 14
+      startSourceChar: 5300
+      endSourceChar: 5302
+      line: 20
       lineChar: 21
       spanCodeSection: ': '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 404
-      endSourceChar: 404
-      line: 14
+      startSourceChar: 5302
+      endSourceChar: 5302
+      line: 20
       lineChar: 23
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 404
-      endSourceChar: 431
-      line: 14
+      startSourceChar: 5302
+      endSourceChar: 5329
+      line: 20
       lineChar: 23
       spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 431
-      endSourceChar: 438
-      line: 16
+      startSourceChar: 5329
+      endSourceChar: 5336
+      line: 22
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 438
-      endSourceChar: 438
-      line: 16
+      startSourceChar: 5336
+      endSourceChar: 5336
+      line: 22
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 438
-      endSourceChar: 456
-      line: 16
+      startSourceChar: 5336
+      endSourceChar: 5354
+      line: 22
       lineChar: 11
       spanCodeSection: "Text text;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 456
-      endSourceChar: 456
-      line: 18
+      startSourceChar: 5354
+      endSourceChar: 5354
+      line: 24
       lineChar: 4
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 456
-      endSourceChar: 456
-      line: 18
+      startSourceChar: 5354
+      endSourceChar: 5354
+      line: 24
       lineChar: 4
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 456
-      endSourceChar: 473
-      line: 18
+      startSourceChar: 5354
+      endSourceChar: 5371
+      line: 24
       lineChar: 4
       spanCodeSection: "int _num;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 473
-      endSourceChar: 491
-      line: 20
+      startSourceChar: 5371
+      endSourceChar: 5389
+      line: 26
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 491
-      endSourceChar: 502
-      line: 21
+      startSourceChar: 5389
+      endSourceChar: 5400
+      line: 27
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 502
-      endSourceChar: 502
-      line: 22
+      startSourceChar: 5400
+      endSourceChar: 5400
+      line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 502
-      endSourceChar: 509
-      line: 22
+      startSourceChar: 5400
+      endSourceChar: 5407
+      line: 28
       lineChar: 8
       spanCodeSection: '_num = '
     - startInstruction: 20
       endInstruction: 47
-      startSourceChar: 509
-      endSourceChar: 526
-      line: 22
+      startSourceChar: 5407
+      endSourceChar: 5424
+      line: 28
       lineChar: 15
       spanCodeSection: "0;\r\n    }\r\n\r\n    "
     - startInstruction: 48
       endInstruction: 67
-      startSourceChar: 526
-      endSourceChar: 545
-      line: 25
+      startSourceChar: 5424
+      endSourceChar: 5443
+      line: 31
       lineChar: 4
       spanCodeSection: "void Update()\r\n    "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 545
-      endSourceChar: 556
-      line: 26
+      startSourceChar: 5443
+      endSourceChar: 5454
+      line: 32
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 556
-      endSourceChar: 556
-      line: 27
+      startSourceChar: 5454
+      endSourceChar: 5454
+      line: 33
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 556
-      endSourceChar: 568
-      line: 27
+      startSourceChar: 5454
+      endSourceChar: 5466
+      line: 33
       lineChar: 8
       spanCodeSection: 'text.text = '
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 568
-      endSourceChar: 568
-      line: 27
+      startSourceChar: 5466
+      endSourceChar: 5466
+      line: 33
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 568
-      endSourceChar: 568
-      line: 27
+      startSourceChar: 5466
+      endSourceChar: 5466
+      line: 33
       lineChar: 20
       spanCodeSection: 
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 568
-      endSourceChar: 573
-      line: 27
+      startSourceChar: 5466
+      endSourceChar: 5471
+      line: 33
       lineChar: 20
       spanCodeSection: _num.
     - startInstruction: 68
       endInstruction: 123
-      startSourceChar: 573
-      endSourceChar: 599
-      line: 27
+      startSourceChar: 5471
+      endSourceChar: 5497
+      line: 33
       lineChar: 25
       spanCodeSection: "ToString();\r\n    }\r\n\r\n    "
     - startInstruction: 124
       endInstruction: 143
-      startSourceChar: 599
-      endSourceChar: 636
-      line: 30
+      startSourceChar: 5497
+      endSourceChar: 5534
+      line: 36
       lineChar: 4
       spanCodeSection: "public override void Interact()\r\n    "
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 636
-      endSourceChar: 647
-      line: 31
+      startSourceChar: 5534
+      endSourceChar: 5545
+      line: 37
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 647
-      endSourceChar: 647
-      line: 32
+      startSourceChar: 5545
+      endSourceChar: 5545
+      line: 38
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 144
       endInstruction: 143
-      startSourceChar: 647
-      endSourceChar: 647
-      line: 32
+      startSourceChar: 5545
+      endSourceChar: 5545
+      line: 38
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 144
       endInstruction: 144
-      startSourceChar: 647
-      endSourceChar: 647
-      line: 32
+      startSourceChar: 5545
+      endSourceChar: 5545
+      line: 38
       lineChar: 8
       spanCodeSection: 
+  hasInteractEvent: 1
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

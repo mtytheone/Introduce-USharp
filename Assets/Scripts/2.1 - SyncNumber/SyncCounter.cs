@@ -14,15 +14,32 @@
 
 using UdonSharp;
 using UnityEngine;
+using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class RotateCube : UdonSharpBehaviour
+public class SyncCounter : UdonSharpBehaviour
 {
-    public float RotateSpeed;
+    public Text text;
+
+    [UdonSynced(UdonSyncMode.None)]
+    int _num;
+
+    void Start()
+    {
+        _num = 0;
+    }
 
     void Update()
     {
-        this.gameObject.transform.Rotate(this.gameObject.transform.up * RotateSpeed * Time.deltaTime);
+        text.text = _num.ToString();
+    }
+
+    public override void Interact()
+    {
+        //Cubeに対するオーナーを変更
+        if (!Networking.IsOwner(Networking.LocalPlayer, this.gameObject)) Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
+
+        _num++;
     }
 }
