@@ -6,7 +6,11 @@
 これはU#の解説記事のために作ったサンプルプロジェクトです。
 解説記事自体は[こちら](https://hatuxes.hatenablog.jp/entry/2020/04/05/013310)になります。
 
-VRCSDK3及びUdonSharpをインストールしてご使用ください。
+
+## How to Install - 導入方法
+[Releaseページ](https://github.com/mtytheone/Introduce-USharp/releases)から最新版のunitypackageをダウンロードしてください。
+
+その後、VRCSDK3及びUdonSharpをインストールしたUnityのプロジェクトに、先程ダウンロードしたunitypackageを導入してください。
 
 ## License - ライセンス
 このプロジェクト及びソースファイルは **MIT** ライセンスに乗っ取ります。
