@@ -21,7 +21,7 @@ using VRC.Udon;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class OwnerTransfer_Countup_System : UdonSharpBehaviour
 {
-    [UdonSynced] private int _value;      // データ本体
+    [UdonSynced(UdonSyncMode.None)] private int _value;      // データ本体
 
     public Text DisplayDataText;          // データを表示するText
     public Text OptionText;               // 誰がOwnerかを表示するText
@@ -35,57 +35,15 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
         // GetComponent<UdonBehavior>(); はU#の仕様上使えない
         _thisBehavior = (UdonBehaviour)GetComponent(typeof(UdonBehaviour));
 
-        var player = Networking.LocalPlayer;
-        if (player.IsOwner(this.gameObject))
-        {
-            // Owner側の処理
-            OptionText.text = $"<color=red>{player.displayName} is Owner!</color>";
-        }
-        else
-        {
-            // Owner以外の処理
-            OptionText.text = $"{player.displayName} don't Owner";
-        }
+        // Onwerかどうかを表示
+        SetOptionalText(Networking.LocalPlayer);
     }
 
 
 
-    // Owner以外のデータ表示処理
-    public override void OnDeserialization()
-    {
-        DisplayDataText.text = _value.ToString();
-    }
-
-    // SetOwnerのリクエストが飛んだ際に呼ばれる関数
-    // 譲渡の可否を返す必要がある
-    public override bool OnOwnershipRequest(VRCPlayerApi requestingPlayer, VRCPlayerApi requestedOwner)
-    {
-        return true;  // 譲渡を許可
-    }
-
-    // Ownerが移行した際の処理
-    public override void OnOwnershipTransferred(VRCPlayerApi player)
-    {
-        Debug.Log("OnOwnershipTransferred!");
-
-        // このイベントはインスタンスにいる全員に発行されるので、Network.LocalPlayerを用いる
-        // 引数のplayerは新たなオーナーを指す
-        if (Networking.LocalPlayer.IsOwner(this.gameObject))
-        {
-            // Owner側の処理
-            OptionText.text = $"<color=red>{player.displayName} is Owner!</color>";
-        }
-        else
-        {
-            // Owner以外の処理
-            OptionText.text = $"{player.displayName} don't Owner";
-        }
-    }
-
-
-
+    // Cubeをインタラクトした時に呼ばれる
     // 新にOwnerになって、データを自身で更新する
-    public void RequestCountUp()
+    public override void Interact()
     {
         var player = Networking.LocalPlayer;
         Networking.SetOwner(player, this.gameObject);
@@ -96,6 +54,31 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
         }
     }
 
+    // Owner以外のデータ表示処理
+    public override void OnDeserialization()
+    {
+        DisplayDataText.text = _value.ToString();
+    }
+
+    // SetOwnerのリクエストが飛んだ際に呼ばれる関数
+    // 譲渡の可否を返す必要がある
+    // trueを返すだけなので、書かなくても良い
+    public override bool OnOwnershipRequest(VRCPlayerApi requestingPlayer, VRCPlayerApi requestedOwner)
+    {
+        return true;  // 譲渡を許可
+    }
+
+    // Ownerが移行した際の処理
+    // このイベントはインスタンスにいる全員に発行されるので、Network.LocalPlayerを用いる
+    // 引数のplayerは新たなオーナーを指す
+    public override void OnOwnershipTransferred(VRCPlayerApi player)
+    {
+        SetOptionalText(Networking.LocalPlayer);
+    }
+
+
+
+
     // Ownerが値を+1する処理
     public void CountUp()
     {
@@ -104,6 +87,21 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
 
         // Owner変更後に即時更新すると、新しいOwner以外に値がうまく反映されない（次のNetworkTickにならないと反映されないらしい）
         SendCustomEventDelayedSeconds(nameof(SerializeData), 0.4f);
+    }
+
+    // プレイヤーがOwnerかどうかをテキストで表示させる処理
+    public void SetOptionalText(VRCPlayerApi player)
+    {
+        if (player.IsOwner(this.gameObject))
+        {
+            // Owner側の処理
+            OptionText.text = $"<color=red>{player.displayName} is Owner!</color>";
+        }
+        else
+        {
+            // Owner以外の処理
+            OptionText.text = $"{player.displayName} don't Owner";
+        }
     }
 
     public void SerializeData()

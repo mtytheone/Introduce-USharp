@@ -17,7 +17,6 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
 public class MaterialChange : UdonSharpBehaviour
 {
     public MeshRenderer Ground;        // ’n–Ê‚ÌMeshRenderer

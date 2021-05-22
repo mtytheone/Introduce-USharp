@@ -18,7 +18,6 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
 public class Local_Countup_System : UdonSharpBehaviour
 {
     public Text DisplayDataText;  // データを表示するためのText
@@ -35,8 +34,8 @@ public class Local_Countup_System : UdonSharpBehaviour
 
 
 
-    // 値を+1する処理（ボタンに呼ばれる）
-    public void CountUp()
+    // Cubeをインタラクトすることで、値を+1する処理
+    public override void Interact()
     {
         _value++;
     }

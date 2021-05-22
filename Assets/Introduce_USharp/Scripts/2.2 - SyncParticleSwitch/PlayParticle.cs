@@ -17,7 +17,6 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
 public class PlayParticle : UdonSharpBehaviour
 {
     public ParticleSystem Particle;  // 再生するパーティクル本体
