@@ -100,7 +100,7 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
         else
         {
             // Owner以外の処理
-            OptionText.text = $"{player.displayName} don't Owner";
+            OptionText.text = $"{player.displayName} isn't Owner";
         }
     }
 
