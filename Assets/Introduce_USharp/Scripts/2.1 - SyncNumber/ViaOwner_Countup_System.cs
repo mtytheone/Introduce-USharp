@@ -1,4 +1,4 @@
-#region License
+﻿#region License
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* MIT License                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */
 /*                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
@@ -18,28 +18,74 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class SyncCounter : UdonSharpBehaviour
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+public class ViaOwner_Countup_System : UdonSharpBehaviour
 {
-    public Text text;
+    [UdonSynced(UdonSyncMode.None)] private int _value;        // データ本体
 
-    [UdonSynced(UdonSyncMode.None)]
-    int _num;
+    public Text DisplayDataText;            // データを表示するText
+    public Text OptionText;                 // 誰がOwnerかを表示するText
 
-    void Start()
+    private UdonBehaviour _thisBehavior;    // UdonBehavior本体
+
+
+
+    private void Start()
     {
-        _num = 0;
+        // GetComponent<UdonBehavior>(); はU#の仕様上使えない
+        _thisBehavior = (UdonBehaviour)GetComponent(typeof(UdonBehaviour));
+
+        // Onwerかどうかを表示
+        SetOptionalText(Networking.LocalPlayer);
     }
 
-    void Update()
-    {
-        text.text = _num.ToString();
-    }
 
+
+    // Cubeをインタラクトしたときに呼ばれる
     public override void Interact()
     {
-        //Cube�ɑ΂���I�[�i�[��ύX
-        if (!Networking.IsOwner(Networking.LocalPlayer, this.gameObject)) Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
+        var player = Networking.LocalPlayer;
 
-        _num++;
+        if (player.IsOwner(this.gameObject))
+        {
+            // Ownerが押したら、純粋にカウントアップする
+            CountUp();
+        }
+        else
+        {
+            // Owner以外が押したら、Ownerにカウントアップさせるように命令する
+            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(CountUp));
+        }
+    }
+
+    // Owner以外のデータ表示処理
+    public override void OnDeserialization()
+    {
+        DisplayDataText.text = _value.ToString();
+    }
+
+
+
+    // Ownerが値を+1する処理
+    public void CountUp()
+    {
+        _value++;                                   // データ更新
+        _thisBehavior.RequestSerialization();       // 同期更新
+        DisplayDataText.text = _value.ToString();   // データ表示更新
+    }
+
+    // プレイヤーがOwnerかどうかをテキストで表示させる処理
+    public void SetOptionalText(VRCPlayerApi player)
+    {
+        if (player.IsOwner(this.gameObject))
+        {
+            // Owner側の処理
+            OptionText.text = $"<color=red>{player.displayName} is Owner!</color>";
+        }
+        else
+        {
+            // Owner以外の処理
+            OptionText.text = $"{player.displayName} don't Owner";
+        }
     }
 }
