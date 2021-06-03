@@ -26,15 +26,10 @@ public class ViaOwner_Countup_System : UdonSharpBehaviour
     public Text DisplayDataText;            // データを表示するText
     public Text OptionText;                 // 誰がOwnerかを表示するText
 
-    private UdonBehaviour _thisBehavior;    // UdonBehavior本体
-
 
 
     private void Start()
     {
-        // GetComponent<UdonBehavior>(); はU#の仕様上使えない
-        _thisBehavior = (UdonBehaviour)GetComponent(typeof(UdonBehaviour));
-
         // Onwerかどうかを表示
         SetOptionalText(Networking.LocalPlayer);
     }
@@ -70,7 +65,7 @@ public class ViaOwner_Countup_System : UdonSharpBehaviour
     public void CountUp()
     {
         _value++;                                   // データ更新
-        _thisBehavior.RequestSerialization();       // 同期更新
+        RequestSerialization();                     // 同期更新
         DisplayDataText.text = _value.ToString();   // データ表示更新
     }
 
