@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* MIT License                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */
 /*                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
-/* Copyright (c) 2020 hatuxes                                                                                                                                                                                                                                                                                                                                                                                                                                                   */
+/* Copyright (c) 2021 hatuxes                                                                                                                                                                                                                                                                                                                                                                                                                                                   */
 /*                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
 /* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:                             */
 /*                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
@@ -23,8 +23,8 @@ public class ViaOwner_Countup_System_WithOnValueChanged : UdonSharpBehaviour
 {
     [UdonSynced(UdonSyncMode.None), FieldChangeCallback(nameof(CountData))] private int _countData;  // データ本体
 
-    public Text DisplayDataText;            // データを表示するText
-    public Text OptionText;                 // 誰がOwnerかを表示するText
+    public Text DisplayDataText;  // データを表示するText
+    public Text OptionText;       // 誰がOwnerかを表示するText
 
     // OnValueChanged用のプロパティ
     public int CountData
@@ -53,7 +53,8 @@ public class ViaOwner_Countup_System_WithOnValueChanged : UdonSharpBehaviour
     {
         if (Networking.LocalPlayer.IsOwner(this.gameObject))
         {
-            CountUp();                // Ownerが押したら、純粋にカウントアップ
+            // Ownerが押したら、純粋にカウントアップ
+            CountUp();
         }
         else
         {

@@ -22,14 +22,14 @@ public class Local_Countup_System : UdonSharpBehaviour
 {
     public Text DisplayDataText;  // データを表示するためのText
 
-    private int _value;           // データ本体
+    private int _countData;           // データ本体
 
 
 
     void Update()
     {
         // 常時データをTextに出力する
-        DisplayDataText.text = _value.ToString();
+        DisplayDataText.text = _countData.ToString();
     }
 
 
@@ -37,6 +37,6 @@ public class Local_Countup_System : UdonSharpBehaviour
     // Cubeをインタラクトすることで、値を+1する処理
     public override void Interact()
     {
-        _value++;
+        _countData++;
     }
 }
