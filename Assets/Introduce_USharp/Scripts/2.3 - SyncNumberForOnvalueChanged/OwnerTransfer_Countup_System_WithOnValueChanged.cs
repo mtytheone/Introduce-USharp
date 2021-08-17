@@ -19,12 +19,23 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
-public class ViaOwner_Countup_System : UdonSharpBehaviour
+public class OwnerTransfer_Countup_System_WithOnValueChanged : UdonSharpBehaviour
 {
-    [UdonSynced(UdonSyncMode.None)] private int _countData;        // データ本体
+    [UdonSynced(UdonSyncMode.None), FieldChangeCallback(nameof(CountData))] private int _countData;      // データ本体
 
-    public Text DisplayDataText;            // データを表示するText
-    public Text OptionText;                 // 誰がOwnerかを表示するText
+    public Text DisplayDataText;          // データを表示するText
+    public Text OptionText;               // 誰がOwnerかを表示するText
+
+    // OnValueChanged用のプロパティ
+    public int CountData
+    {
+        get => _countData;
+        set
+        {
+            _countData = value;
+            DisplayCountData();  // Owner以外のデータ表示処理
+        }
+    }
 
 
 
@@ -36,36 +47,42 @@ public class ViaOwner_Countup_System : UdonSharpBehaviour
 
 
 
-    // Cubeをインタラクトしたときに呼ばれる
+    // Cubeをインタラクトした時に呼ばれる
+    // 新にOwnerになって、データを自身で更新する
     public override void Interact()
     {
         var player = Networking.LocalPlayer;
+        Networking.SetOwner(player, this.gameObject);
 
         if (player.IsOwner(this.gameObject))
         {
-            // Ownerが押したら、純粋にカウントアップする
             CountUp();
-        }
-        else
-        {
-            // Owner以外が押したら、Ownerにカウントアップさせるように命令する
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner, nameof(CountUp));
         }
     }
 
-    // Owner以外のデータ表示処理
-    public override void OnDeserialization()
+    // Ownerが移行した際の処理
+    // このイベントはインスタンスにいる全員に発行されるので、Network.LocalPlayerを用いる
+    // 引数のplayerは新たなオーナーを指す
+    public override void OnOwnershipTransferred(VRCPlayerApi player)
     {
-        DisplayDataText.text = _countData.ToString();
+        SetOptionalText(Networking.LocalPlayer);
     }
+
 
 
 
     // Ownerが値を+1する処理
     public void CountUp()
     {
-        _countData++;                                   // データ更新
-        RequestSerialization();                     // 同期更新
+        _countData++;             // データ更新
+        RequestSerialization();   // 同期更新
+
+        DisplayCountData();       // 表示値更新
+    }
+
+    // 同期変数の値をUIに表示する処理
+    public void DisplayCountData()
+    {
         DisplayDataText.text = _countData.ToString();   // データ表示更新
     }
 

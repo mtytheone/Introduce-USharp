@@ -19,12 +19,24 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
-public class ViaOwner_Countup_System : UdonSharpBehaviour
+public class ViaOwner_Countup_System_WithOnValueChanged : UdonSharpBehaviour
 {
-    [UdonSynced(UdonSyncMode.None)] private int _countData;        // データ本体
+    [UdonSynced(UdonSyncMode.None), FieldChangeCallback(nameof(CountData))] private int _countData;  // データ本体
 
     public Text DisplayDataText;            // データを表示するText
     public Text OptionText;                 // 誰がOwnerかを表示するText
+
+    // OnValueChanged用のプロパティ
+    public int CountData
+    {
+        get => _countData;
+        set
+        {
+            _countData = value;
+            DisplayCountData();  // Owner以外のデータ表示処理
+        }
+    }
+
 
 
 
@@ -39,12 +51,9 @@ public class ViaOwner_Countup_System : UdonSharpBehaviour
     // Cubeをインタラクトしたときに呼ばれる
     public override void Interact()
     {
-        var player = Networking.LocalPlayer;
-
-        if (player.IsOwner(this.gameObject))
+        if (Networking.LocalPlayer.IsOwner(this.gameObject))
         {
-            // Ownerが押したら、純粋にカウントアップする
-            CountUp();
+            CountUp();                // Ownerが押したら、純粋にカウントアップ
         }
         else
         {
@@ -53,19 +62,20 @@ public class ViaOwner_Countup_System : UdonSharpBehaviour
         }
     }
 
-    // Owner以外のデータ表示処理
-    public override void OnDeserialization()
-    {
-        DisplayDataText.text = _countData.ToString();
-    }
-
 
 
     // Ownerが値を+1する処理
     public void CountUp()
     {
-        _countData++;                                   // データ更新
-        RequestSerialization();                     // 同期更新
+        _countData++;              // データ更新
+        RequestSerialization();    // 同期更新
+
+        DisplayCountData();        // 表示値更新
+    }
+
+    // 同期変数の値をUIに表示する処理
+    public void DisplayCountData()
+    {
         DisplayDataText.text = _countData.ToString();   // データ表示更新
     }
 

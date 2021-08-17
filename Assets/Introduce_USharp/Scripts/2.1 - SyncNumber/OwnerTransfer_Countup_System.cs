@@ -21,7 +21,7 @@ using VRC.Udon;
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class OwnerTransfer_Countup_System : UdonSharpBehaviour
 {
-    [UdonSynced(UdonSyncMode.None)] private int _value;      // データ本体
+    [UdonSynced(UdonSyncMode.None)] private int _countData;      // データ本体
 
     public Text DisplayDataText;          // データを表示するText
     public Text OptionText;               // 誰がOwnerかを表示するText
@@ -52,7 +52,7 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
     // Owner以外のデータ表示処理
     public override void OnDeserialization()
     {
-        DisplayDataText.text = _value.ToString();
+        DisplayDataText.text = _countData.ToString();
     }
 
     // SetOwnerのリクエストが飛んだ際に呼ばれる関数
@@ -77,11 +77,13 @@ public class OwnerTransfer_Countup_System : UdonSharpBehaviour
     // Ownerが値を+1する処理
     public void CountUp()
     {
-        _value++;                                   // データ更新
-        DisplayDataText.text = _value.ToString();   // データ表示
+        _countData++; // データ更新
 
-        // Owner変更後に即時更新すると、新しいOwner以外に値がうまく反映されない（次のNetworkTickにならないと反映されないらしい）
+        // Owner変更後に即時更新すると、OnDeserializationに追いつかないことがあるため。少し遅延させている
         SendCustomEventDelayedSeconds(nameof(SerializeData), 0.4f);
+
+
+        DisplayDataText.text = _countData.ToString();   // データ表示
     }
 
     // プレイヤーがOwnerかどうかをテキストで表示させる処理
