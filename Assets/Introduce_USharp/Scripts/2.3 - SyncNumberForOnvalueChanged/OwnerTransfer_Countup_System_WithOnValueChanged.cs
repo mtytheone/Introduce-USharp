@@ -75,10 +75,8 @@ public class OwnerTransfer_Countup_System_WithOnValueChanged : UdonSharpBehaviou
     // Ownerが値を+1する処理
     public void CountUp()
     {
-        _countData++;             // データ更新
+        CountData++;             // データ更新
         RequestSerialization();   // 同期更新
-
-        DisplayCountData();       // 表示値更新
     }
 
     // 同期変数の値をUIに表示する処理
